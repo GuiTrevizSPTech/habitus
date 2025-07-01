@@ -8,6 +8,7 @@
     --principal-bg: #F5F7FA;
     --main-blue: #62A9E0;
     --text-color: #4a4a4a;
+    --button-bg: #3B87C4;
 }
 
 body {
@@ -61,7 +62,7 @@ ul {
 
 
 .nav-items {
- transition: transform .3s ease-in;
+ transition: transform .2s ease-in;
 }
 
 .nav-items:hover {
@@ -69,7 +70,7 @@ ul {
 }
 
 .nav-links {
- transition: color .3s ease-in;
+ transition: color .2s ease-in;
 }
 
 .nav-links:hover {
@@ -78,6 +79,13 @@ ul {
 
 #login {
     padding: 12px 24px;
-    border: 1px solid var(--main-blue);
     border-radius: 8px;
+    background-color: var(--button-bg);
+    color: var(--principal-bg);
+    transition: background-color .2s ease-in, color .2s ease-in;
+}
+
+#login:hover {
+    background-color: var(--main-blue);
+    color: var(--text-color);
 }
