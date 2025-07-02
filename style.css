@@ -89,3 +89,23 @@ ul {
     background-color: var(--main-blue);
     color: var(--text-color);
 }
+
+.social-media {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 12px;
+}
+
+.social-media div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 24px;
+}
+
+.icons-img {
+    height: 50px;
+    fill: var(--main-blue);
+}
