@@ -229,6 +229,22 @@ ul {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    background-color: var(--soft-blue-bg2);
+    border-radius: 8px;
+    box-shadow: 3px 3px 10px 1px var(--main-blue);
+}
+
+.icon-benefit-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30%;
+    width: 100%;
+}
+
+.icon-benefit {
+    height: 60%;
+    fill: var(--button-bg);
 }
 
 .content-benefit-card {
