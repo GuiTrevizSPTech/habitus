@@ -10,6 +10,8 @@
     --title-color: #4a4a4a;
     --text-color: #555;
     --button-bg: #3B87C4;
+    --soft-blue-bg: #E8F4FD;
+    --soft-blue-bg2: #D8ECF9;
 }
 
 body {
@@ -17,8 +19,21 @@ body {
     background-color: var(--principal-bg);
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     color: var(--title-color);
+}
+
+h2 {
+    font-size: 40px;
+}
+
+h3 {
+    font-size: 22px;
 }
 
 a,
@@ -112,6 +127,7 @@ ul {
     align-items: center;
     justify-content: center;
     height: 88vh;
+    background-color: var(--soft-blue-bg);
 
 }
 
@@ -159,22 +175,12 @@ ul {
     row-gap: 48px;
 }
 
-.slogan-text h2 {
-    font-size: 40px;
-    color: var(--title-color);
-}
-
 .slogan-text div {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: start;
     row-gap: 20px;
-}
-
-.slogan-phrase {
-    font-size: 22px;
-    font-weight: 900;
 }
 
 .slogan-action a {
@@ -189,6 +195,53 @@ ul {
 .slogan-action a:hover {
     background-color: var(--main-blue);
     color: var(--text-color);
+}
+
+/* Benefits */
+
+.benefits {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+
+.benefits .container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.all-benefits {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.benefit-cards {
+    height: 80%;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.content-benefit-card {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 20px;
+}
+
+.content-benefit-card{
+    text-align: center;
 }
 
 /* Footer */
@@ -211,4 +264,9 @@ ul {
 .icons-img {
     height: 50px;
     fill: var(--main-blue);
+    transition: transform .2s ease-in;
+}
+
+.icons-img:hover {
+    transform: rotate(3deg) scale(1.1);
 }
